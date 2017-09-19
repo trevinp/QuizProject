@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Know Your City: Oakland CA"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:src="@drawable/oakland_ca"
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp"
+            android:layout_height="95dp" />
+
+        <TextView
+            android:id="@+id/textViewQ1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:fontFamily="monospace"
+            android:text="1. About when was Oakland founded? "
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonQ1a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1776" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQ1b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1900" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQ1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1852" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewQ2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:fontFamily="monospace"
+            android:text="2. About what is the current population?"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonQ2a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="420,000" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQ2b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="150,000" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQ2c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.5 Million" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:fontFamily="monospace"
+            android:text="3. What major league sports teams are present?"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxQ3a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="The Athletics" />
+
+        <CheckBox
+            android:id="@+id/checkBoxQ3b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="The Giants" />
+
+        <CheckBox
+            android:id="@+id/checkBoxQ3c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="The Raiders" />
+
+        <CheckBox
+            android:id="@+id/checkBoxQ3d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="The Warriors" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:fontFamily="monospace"
+            android:text="4. What county is Oakland in?"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextQ4"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="CheckAnswers"
+            android:padding="10dp"
+            android:background="#56CA4A"
+            android:textSize="18dp"
+            android:text="SUBMIT ANSWERS" />
+    </LinearLayout>
+</ScrollView>
